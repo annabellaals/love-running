@@ -175,47 +175,34 @@ padding-left: 10px;
     color: #3a3a3a;
 }
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-    #menu {
+@media screen and (min-width: 1200px) {
+    /* Reasons section */
+    #benefits {
         display: flex;
+        flex-direction: row;
     }
 
-    #menu >li {
-        padding-left: 1rem;
+    #benifits > div {
+        flex: 1;
     }
 
-    .nav-toggle-label {
-        display: none;
+    #benifits-image {
+        order: 0;
+    }
+    
+    #benifits-mental {
+        order: 1;
     }
 
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
+    #benifits-mental > div {
+        align-self: flex-start;
     }
 
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 79px;
-  }
-
-/* Hero */
-#cover-text {
-    width: 300px;
-right: 50px;
+    #benifits-physical > div {
+        align-self: flex-end;
+    }
 }
 
-}
 
  /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
